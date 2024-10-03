@@ -48,7 +48,7 @@ namespace DirectoryScan.Controller
             return true;
         }
 
-        public void GetAllDirectoryesDisk(DriveInfo driver, FileModel[] disks, int index) //C:\Users\leshashef\Desktop\ТестоваяПапкаВес
+        public void GetAllDirectoryesDisk(DriveInfo driver, FileModel[] disks, int index) 
         {
 
             DirectoryInfo folder = new DirectoryInfo(driver.Name);
@@ -66,9 +66,6 @@ namespace DirectoryScan.Controller
 
             long AllSize = FolderFulPack(folder, disks[index], true);
 
-            // disk.Size = AllSize;
-
-          //  return disk;
         }
         private long FolderFulPack(DirectoryInfo folder, FileModel current, bool root = false)
         {
