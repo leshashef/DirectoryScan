@@ -47,7 +47,6 @@ namespace DirectoryScan
 
             Task.Run(LoadAllDisk);
 
-
             MainDirectory.MouseDoubleClick += NextFolder;
         }
 
